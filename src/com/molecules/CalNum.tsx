@@ -1,25 +1,16 @@
 import NumberBtn from "../atoms/NumberBtn";
+import Equal from "../atoms/Equal";
 
 const CalNum = () => {
-  const numData = [7, 8, 9, 4, 5, 6, 1, 2, 3];
+  const numData: number[] = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0];
 
-  const propsHandle = (e: string) => <NumberBtn num={e} />;
   return (
-    <div className="grid grid-cols-3 w-2/3">
+    <div className="grid grid-cols-3 w-2/3 ">
       {numData &&
         numData.map((number, index) => <NumberBtn num={number} key={index} />)}
-      <button
-        value={0}
-        className="col-span-2 bg-numbersColor rounded-full text-white"
-        onClick={(e) => propsHandle(e.currentTarget.value)}>
-        0
-      </button>
-      <button
-        value={"."}
-        className="bg-numbersColor rounded-full text-white"
-        onClick={(e) => propsHandle(e.currentTarget.value)}>
-        .
-      </button>
+      <div className="bg-opeColor rounded-full text-white p-2 m-1 text-center">
+        <Equal />
+      </div>
     </div>
   );
 };

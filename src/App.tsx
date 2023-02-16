@@ -1,10 +1,10 @@
 import "./App.scss";
-import CalNum from "./com/molecules/CalNum";
+import Performance from "./com/organisms/Performance";
 
 function App() {
   return (
     <div className="App">
-      <CalNum />
+      <Performance />
     </div>
   );
 }
