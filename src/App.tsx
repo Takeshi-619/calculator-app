@@ -1,10 +1,10 @@
 import "./App.scss";
-import Performance from "./com/organisms/Performance";
+import Btn from "./com/Btn";
 
 function App() {
   return (
     <div className="App">
-      <Performance />
+      <Btn />
     </div>
   );
 }

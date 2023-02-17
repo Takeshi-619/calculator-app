@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         numbersColor: "#333333",
         opeColor: "#FEA00A",
+        acColor: "#A5A5A5",
       },
     },
   },
