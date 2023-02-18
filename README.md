@@ -1,3 +1,3 @@
-#簡単な計算機アプリ
+# 簡単な計算機アプリ
 ***
-##React&TypeScript&Tailwind
+## React & TypeScript & Tailwind
