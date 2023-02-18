@@ -3,7 +3,7 @@ import Btn from "./com/Btn";
 
 function App() {
   return (
-    <div className="App">
+    <div className="flex justify-center items-center h-[100vh] bg-black">
       <Btn />
     </div>
   );

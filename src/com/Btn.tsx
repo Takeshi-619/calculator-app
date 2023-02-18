@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Display from "./Display";
 
 function Btn() {
   const [data, setData] = useState("");
@@ -18,7 +19,7 @@ function Btn() {
   };
 
   return (
-    <div>
+    <div className=" w-1/3 max-md:w-4/5">
       <div className="flex justify-between items-center">
         <button
           className="bg-acColor rounded-full text-white p-2 m-1"
@@ -28,7 +29,7 @@ function Btn() {
           value="C">
           AC
         </button>
-        <div>{data}</div>
+        <Display result={data} />
       </div>
       <div className="flex">
         <div className="grid grid-cols-3 w-2/3">
@@ -64,14 +65,14 @@ function Btn() {
           <button
             className="bg-opeColor rounded-full text-white p-2 m-1"
             onClick={(e) => result(e.currentTarget.value)}
-            value="×">
-            ×
+            value="*">
+            *
           </button>
           <button
             className="bg-opeColor rounded-full text-white p-2 m-1"
             onClick={(e) => result(e.currentTarget.value)}
-            value="÷">
-            ÷
+            value="/">
+            /
           </button>
         </div>
       </div>

@@ -8,6 +8,9 @@ module.exports = {
         opeColor: "#FEA00A",
         acColor: "#A5A5A5",
       },
+      fontFamily: {
+        resultFont: "dseg7 classic",
+      },
     },
   },
   plugins: [],
